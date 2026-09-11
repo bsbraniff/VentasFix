@@ -3,6 +3,8 @@ const cors = require("cors");
 require("dotenv").config();
 
 const sequelize = require("./config/database");
+const authRoutes = require("./routes/authRoutes");
+const verificarToken = require("./middleware/authMiddleware");
 require("./models");
 
 const app = express();
@@ -10,11 +12,24 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+app.use("/api/auth", authRoutes);
+
+app.get("/api/protegido", verificarToken, (req, res) => {
+
+    res.json({
+        mensaje: "Acceso autorizado",
+        usuario: req.usuario
+    });
+
+});
+
 app.get("/", (req, res) => {
     res.json({
         mensaje: "API VentasFix funcionando correctamente"
     });
 });
+
+
 
 const PORT = process.env.PORT || 3000;
 
