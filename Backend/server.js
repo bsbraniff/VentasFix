@@ -6,6 +6,9 @@ const sequelize = require("./config/database");
 const authRoutes = require("./routes/authRoutes");
 const verificarToken = require("./middleware/authMiddleware");
 const usuarioRoutes = require("./routes/usuarioRoutes");
+const productoRoutes = require("./routes/productoRoutes");
+const Producto = require("./models/Producto");
+
 
 require("./models");
 
@@ -16,6 +19,7 @@ app.use(express.json());
 
 app.use("/api/auth", authRoutes);
 app.use("/api/usuarios", usuarioRoutes);
+app.use("/api/productos", productoRoutes);
 
 app.get("/api/protegido", verificarToken, (req, res) => {
 
