@@ -8,6 +8,7 @@ const verificarToken = require("./middleware/authMiddleware");
 const usuarioRoutes = require("./routes/usuarioRoutes");
 const productoRoutes = require("./routes/productoRoutes");
 const clienteRoutes = require("./routes/clienteRoutes");
+const dashboardRoutes = require("./routes/dashboardRoutes");
 
 
 require("./models");
@@ -21,6 +22,7 @@ app.use("/api/auth", authRoutes);
 app.use("/api/usuarios", usuarioRoutes);
 app.use("/api/productos", productoRoutes);
 app.use("/api/clientes", clienteRoutes);
+app.use("/api/dashboard", dashboardRoutes);
 
 app.get("/api/protegido", verificarToken, (req, res) => {
 
