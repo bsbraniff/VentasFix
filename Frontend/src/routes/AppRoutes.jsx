@@ -45,7 +45,7 @@ function AppRoutes() {
                     element={
                         <ProtectedRoute>
                             <Layout>
-                                <Usuarios />
+                                <Usuarios soyUnProp={1}/>
                             </Layout>
                         </ProtectedRoute>
                     }
