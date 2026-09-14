@@ -1,0 +1,37 @@
+.navbar-ventasfix {
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    min-height: 64px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand-ventasfix {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+    letter-spacing: -0.5px;
+}
+
+.navbar-brand-ventasfix span {
+    color: #0d6efd;
+}
+
+.navbar-brand-ventasfix:hover {
+    color: white;
+}
+
+.btn-logout {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    color: white;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+}
+
+.btn-logout:hover {
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: white;
+    transform: translateY(-1px);
+}

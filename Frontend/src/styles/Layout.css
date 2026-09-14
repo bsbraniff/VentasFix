@@ -1,0 +1,14 @@
+.layout-ventasfix {
+    min-height: 100vh;
+    background-color: #f1f5f9;
+}
+
+.layout-content {
+    min-height: calc(100vh - 64px);
+}
+
+.layout-main {
+    flex-grow: 1;
+    padding: 30px;
+    min-width: 0;
+}
