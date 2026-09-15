@@ -1,0 +1,361 @@
+/* =========================================
+   PÁGINA PRODUCTOS
+========================================= */
+
+.productos-page {
+    padding: 10px;
+}
+
+/* =========================================
+   ENCABEZADO
+========================================= */
+
+.productos-header {
+    margin-bottom: 25px;
+}
+
+.productos-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 4px;
+}
+
+.productos-subtitle {
+    color: #64748b;
+    margin-bottom: 0;
+}
+
+/* =========================================
+   BOTÓN NUEVO PRODUCTO
+========================================= */
+
+.btn-nuevo-producto {
+    background: linear-gradient(135deg, #0d6efd, #0b5ed7);
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 9px;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(13, 110, 253, 0.2);
+    transition: all 0.2s ease;
+}
+
+.btn-nuevo-producto:hover {
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(13, 110, 253, 0.3);
+}
+
+/* =========================================
+   ALERTAS
+========================================= */
+
+.productos-alert {
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* =========================================
+   FORMULARIO
+========================================= */
+
+.producto-form-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+    margin-bottom: 25px;
+}
+
+.producto-form-header {
+    background: linear-gradient(135deg, #0f172a, #1e3a5f);
+    color: white;
+    padding: 16px 20px;
+}
+
+.producto-form-header h5 {
+    margin: 0;
+    font-weight: 600;
+}
+
+.producto-form-body {
+    padding: 25px;
+}
+
+.producto-label {
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 7px;
+}
+
+.producto-input {
+    border: 1px solid #dbe2ea;
+    border-radius: 9px;
+    padding: 10px 12px;
+    transition: all 0.2s ease;
+}
+
+.producto-input:focus {
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.12);
+}
+
+/* =========================================
+   BOTONES FORMULARIO
+========================================= */
+
+.btn-guardar-producto {
+    background: linear-gradient(135deg, #198754, #157347);
+    border: none;
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-weight: 600;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.btn-guardar-producto:hover {
+    color: white;
+    transform: translateY(-1px);
+    box-shadow: 0 5px 12px rgba(25, 135, 84, 0.25);
+}
+
+.btn-cancelar-producto {
+    border-radius: 8px;
+    padding: 9px 18px;
+    font-weight: 500;
+}
+
+/* =========================================
+   LISTADO DE PRODUCTOS
+========================================= */
+
+.productos-list-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
+}
+
+.productos-list-header {
+    background: white;
+    padding: 18px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.productos-list-header h5 {
+    margin: 0;
+    font-weight: 600;
+    color: #0f172a;
+}
+
+/* =========================================
+   TARJETA DE PRODUCTO
+========================================= */
+
+.producto-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.08);
+    transition: all 0.25s ease;
+    height: 100%;
+}
+
+.producto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(15, 23, 42, 0.14);
+}
+
+/* =========================================
+   IMAGEN
+========================================= */
+
+.producto-card-imagen {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    background-color: #f1f5f9;
+}
+
+.producto-card-imagen-container {
+    position: relative;
+    overflow: hidden;
+    background-color: #f1f5f9;
+}
+
+/* =========================================
+   INFORMACIÓN
+========================================= */
+
+.producto-card-body {
+    padding: 20px;
+}
+
+.producto-sku {
+    display: inline-block;
+    background-color: #e8f1ff;
+    color: #0d6efd;
+    font-size: 0.75rem;
+    font-weight: 700;
+    padding: 5px 9px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.producto-card-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #0f172a;
+    margin-bottom: 8px;
+}
+
+.producto-card-description {
+    color: #64748b;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    min-height: 45px;
+}
+
+/* =========================================
+   PRECIO
+========================================= */
+
+.producto-precio {
+    font-size: 1.35rem;
+    font-weight: 800;
+    color: #0d6efd;
+    margin-top: 12px;
+}
+
+.producto-precio-neto {
+    font-size: 0.8rem;
+    color: #94a3b8;
+}
+
+/* =========================================
+   STOCK
+========================================= */
+
+.producto-stock {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    padding-top: 12px;
+    border-top: 1px solid #eef2f6;
+}
+
+.producto-stock-label {
+    color: #64748b;
+    font-size: 0.85rem;
+}
+
+.producto-stock-value {
+    font-weight: 700;
+    color: #334155;
+}
+
+/* Estados de stock */
+
+.stock-alto {
+    color: #198754;
+}
+
+.stock-medio {
+    color: #fd7e14;
+}
+
+.stock-bajo {
+    color: #dc3545;
+}
+
+/* =========================================
+   ACCIONES
+========================================= */
+
+.producto-card-actions {
+    display: flex;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.btn-editar-producto {
+    flex: 1;
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffe69c;
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-editar-producto:hover {
+    background-color: #ffc107;
+    color: #212529;
+    transform: translateY(-1px);
+}
+
+.btn-eliminar-producto {
+    flex: 1;
+    background-color: #f8d7da;
+    color: #842029;
+    border: 1px solid #f1aeb5;
+    border-radius: 7px;
+    padding: 7px 12px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.btn-eliminar-producto:hover {
+    background-color: #dc3545;
+    color: white;
+    transform: translateY(-1px);
+}
+
+/* =========================================
+   SIN PRODUCTOS
+========================================= */
+
+.productos-empty {
+    padding: 50px 20px;
+    text-align: center;
+    color: #94a3b8;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 768px) {
+
+    .productos-page {
+        padding: 5px;
+    }
+
+    .productos-header {
+        flex-direction: column;
+        align-items: flex-start !important;
+        gap: 15px;
+    }
+
+    .productos-title {
+        font-size: 1.5rem;
+    }
+
+    .btn-nuevo-producto {
+        width: 100%;
+    }
+
+    .producto-form-body {
+        padding: 20px;
+    }
+
+    .producto-card-imagen {
+        height: 190px;
+    }
+}

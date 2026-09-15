@@ -11,6 +11,7 @@ import Usuarios from "../pages/Usuarios/Usuarios";
 import Productos from "../pages/Productos/Productos";
 import Clientes from "../pages/Clientes/Clientes";
 import Layout from "../components/Layout";
+import ClienteForm from "../pages/Clientes/Form";
 
 import ProtectedRoute from "../components/ProtectedRoute";
 
@@ -45,7 +46,7 @@ function AppRoutes() {
                     element={
                         <ProtectedRoute>
                             <Layout>
-                                <Usuarios soyUnProp={1}/>
+                                <Usuarios soyUnProp={1} />
                             </Layout>
                         </ProtectedRoute>
                     }
@@ -63,11 +64,33 @@ function AppRoutes() {
                 />
 
                 <Route
+                    path="/clientes/editar/:id"
+                    element={
+                        <ProtectedRoute>
+                            <Layout>
+                                <ClienteForm />
+                            </Layout>
+                        </ProtectedRoute>
+                    }
+                />
+
+                <Route
                     path="/clientes"
                     element={
                         <ProtectedRoute>
                             <Layout>
                                 <Clientes />
+                            </Layout>
+                        </ProtectedRoute>
+                    }
+                />
+
+                <Route
+                    path="/clientes/nuevo"
+                    element={
+                        <ProtectedRoute>
+                            <Layout>
+                                <ClienteForm />
                             </Layout>
                         </ProtectedRoute>
                     }
